@@ -36,7 +36,7 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
-  total = nil 
+  total = 0 
   index = 0 
   directors = list_of_directors(source)
   while index < source.length do 

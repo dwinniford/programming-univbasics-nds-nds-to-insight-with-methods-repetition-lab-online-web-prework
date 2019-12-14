@@ -39,8 +39,8 @@ def total_gross(source)
   total = nil 
   index = 0 
   directors = list_of_directors(source)
-  while index < directors.length do 
-    total << gross_for_director(d)[directors[index]]
+  while index < source.length do 
+    total << directors_totals(source)[directors[index]]
     index += 1 
   end 
   total 

@@ -36,6 +36,14 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
+  total = nil 
+  index = 0 
+  directors = list_of_directors(source)
+  while index < directors.length do 
+    total << gross_for_director(d)[directors[index]]
+    index += 1 
+  end 
+  total 
   # Write this implementation
   #
   # Should use methods:
